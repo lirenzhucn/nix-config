@@ -62,10 +62,10 @@
     enable = true;
     onActivation.cleanup = "uninstall";
     taps = [
-      "felixkratz/formulae"
+      "felixkratz/formulae"  # for sketchybar and borders
       "moritzsternemann/apple-fonts"
-      "nikitabobko/tap"
-      "homebrew/services"
+      "nikitabobko/tap"  # for aerospace
+      "homebrew/services"  # for `brew services` which manages sketchybar
     ];
     brews = [
       "borders"
