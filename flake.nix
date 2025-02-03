@@ -12,7 +12,23 @@
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#Lirens-MacBook-Pro
     darwinConfigurations."Lirens-MacBook-Pro" = nix-darwin.lib.darwinSystem {
-      modules = [ ./configuration.nix ];
+      modules = [
+        ./modules/workflow.nix
+        ./modules/common.nix
+        ./modules/proscia.nix
+        ./modules/pta.nix
+      ];
+      specialArgs = { inherit inputs; };
+    };
+
+    # $ darwin-rebuild build --flake .#Lirens-MacBook-Air
+    darwinConfigurations."Lirens-MacBook-Air" = nix-darwin.lib.darwinSystem {
+      modules = [
+        ./modules/workflow.nix
+        ./modules/common.nix
+        ./modules/proscia.nix
+        ./modules/pta.nix
+      ];
       specialArgs = { inherit inputs; };
     };
   };
