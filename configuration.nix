@@ -19,10 +19,10 @@
       zig
       fd
       fzf
-      lua
-      jq
       cloc
       duf
+      # python stuff
+      uv
       # node stuff
       nodejs
       nodePackages.typescript
@@ -68,13 +68,15 @@
       "homebrew/services"  # for `brew services` which manages sketchybar
     ];
     brews = [
-      "borders"
       "ghcup"
       "gnupg"
       "go"
       "imagemagick"
       "pandoc"
       "pipx"
+      "borders"  # using the jankyborder nix package doesn't seem to work...
+      "jq"  # sketchybar relies on a jq visible when brew services is run
+      "lua" # sketchybar relies on a lua visible when brew services is run
       "sketchybar"
     ];
     casks = [
