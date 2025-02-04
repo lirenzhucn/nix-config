@@ -25,6 +25,7 @@
     cloc
     duf
     zig
+    gnupg
   ];
 
   # use nix to manage homebrew
@@ -32,7 +33,6 @@
     enable = true;
     onActivation.cleanup = "uninstall";
     brews = [
-      "gnupg"
       "go"
       "imagemagick"
       "pandoc"
