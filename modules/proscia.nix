@@ -7,5 +7,12 @@
     # node stuff
     nodejs
     nodePackages.typescript
+    #
+    jira-cli-go
+    awscli2
+    #
+    emscripten
+    cmake
+    ninja
   ];
 }

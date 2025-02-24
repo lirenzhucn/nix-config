@@ -26,6 +26,7 @@
     duf
     zig
     gnupg
+    colima
   ];
 
   # use nix to manage homebrew
@@ -36,6 +37,8 @@
       "go"
       "imagemagick"
       "pandoc"
+      "docker"
+      "docker-credential-helper"
     ];
   };
 
