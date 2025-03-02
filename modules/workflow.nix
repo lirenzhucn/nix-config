@@ -25,6 +25,7 @@
     ];
     casks = [
       "aerospace"
+      # NOTE: ghostty is currently broken for Darwin in nixpkgs
       "ghostty"
       "font-sf-pro"
       "font-symbols-only-nerd-font"
