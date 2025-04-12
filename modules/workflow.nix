@@ -3,12 +3,6 @@
 # (my two daily drivers are terminal and browser, so they are included.)
 
 { pkgs, ... }: {
-  # List packages installed in system profile. To search by name, run:
-  # $ nix-env -qaP | grep wget
-  environment.systemPackages = with pkgs; [
-    brave
-  ];
-
   # use nix to manage homebrew
   homebrew = {
     taps = [
@@ -29,6 +23,7 @@
       "ghostty"
       "font-sf-pro"
       "font-symbols-only-nerd-font"
+      "font-comic-shanns-mono-nerd-font"
       "sf-symbols"
     ];
   };

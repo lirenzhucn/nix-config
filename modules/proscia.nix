@@ -10,6 +10,10 @@
     #
     jira-cli-go
     awscli2
+    ssm-session-manager-plugin
+    kubectl
+    k9s
+    fluxcd
     #
     emscripten
     cmake
